@@ -13,6 +13,22 @@
     background-clip: text;
 }
 
+/* Target the specific paragraph with inline style */
+.product-hero p[style*="font-size: large"] {
+    font-size: 28px !important; /* Increased from 'large' to a specific pixel size */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Alternative selector for the subtitle paragraph */
+.product-hero > div > p:not(.button-container) {
+    font-size: 28px !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
 .product-hero > div > div {
     flex: 2;
 }
@@ -133,3 +149,15 @@
     filter: blur(var(--acs-hero-glow-blur));
     opacity: var(--acs-hero-glow-opacity);
   }
+
+/* Media queries for responsiveness */
+@media (width <= 768px) {
+    .product-hero h1 {
+        font-size: 48px;
+    }
+    
+    .product-hero p[style*="font-size: large"],
+    .product-hero > div > p:not(.button-container) {
+        font-size: 22px !important;
+    }
+}
