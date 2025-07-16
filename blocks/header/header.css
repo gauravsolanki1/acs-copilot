@@ -206,7 +206,7 @@ header nav .nav-brand > .default-content-wrapper > p > a:hover {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 8%;
+    gap: 4%;
     margin: 0;
     justify-content: flex-end;
     list-style: none;
