@@ -11,11 +11,16 @@ export default function decorate(block) {
   block.addEventListener(('mouseenter'), () => {
     [...block.children].forEach((row) => [...row.children].forEach((col) => {
       const counter = col.firstElementChild;
-      const number = counter?.textContent.match(/\d+/);
+      let textContent = counter?.dataset?.textContent;
+      if (!textContent) {
+        counter.dataset.textContent = counter?.textContent;
+        textContent = counter?.textContent;
+      }
+      const number = textContent.match(/\d+/);
       if (number) {
         const target = parseInt(number[0], 10);
-        const textBefore = counter.textContent.split(number[0])[0];
-        const textAfter = counter.textContent.split(number[0])[1];
+        const textBefore = textContent.split(number[0])[0];
+        const textAfter = textContent.split(number[0])[1];
         makeCounter(counter, target, textBefore, textAfter);
       }
     }));
