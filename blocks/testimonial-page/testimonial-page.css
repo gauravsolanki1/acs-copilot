@@ -19,6 +19,7 @@
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 10px;
+  border-left: 5px solid var(--acs-copilot-link-hover-color);
 }
 
 .testimonial-entry:hover {
@@ -40,10 +41,11 @@
 }
 
 .testimonial-image-wrapper img {
-  max-width: 150px; 
-  height: auto;
-  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   display: inline-block;
+  border: 2px solid var(--acs-copilot-link-hover-color);
 }
 
 .testimonial-name-container {
@@ -51,7 +53,6 @@
   flex-direction: column;
   justify-content: center; 
   text-align: left; 
-  margin-top: 30px;
 }
 
 .testimonial-name-container p {
