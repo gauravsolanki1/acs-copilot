@@ -28,7 +28,7 @@
 
 /* Testimonial Card */
 .testimonial-card {
-  border: 1px solid #212121;
+  border: 1px solid var(--acs-testimonail-card-border-color);
   padding: 20px;
   margin: 12px;
   border-radius: 10px;
