@@ -14,6 +14,8 @@ export default function decorate(block) {
     // Try to extract author and designation from various elements
     const headings = col2.querySelectorAll('h1, h2, h3, h4, h5, strong, b');
     const paragraphs = [...col2.querySelectorAll('p')];
+    // picture element for avatar
+    const picture = row.querySelector('picture');
 
     // First try to get author from headings
     const testimonialAuthor = headings[0]?.textContent.trim() || '';
@@ -60,6 +62,7 @@ export default function decorate(block) {
       testimonialAuthor,
       testimonialDesignation,
       testimonialText,
+      picture,
     };
   }).filter(Boolean);
   const createTestimonialHTML = (items) => items.map((test) => `
@@ -67,6 +70,7 @@ export default function decorate(block) {
       <div class="testimonial-content">
         <p class="quote">${test.testimonialText.replace(/&quot;/g, '')}</p>
         <div class="testimonial-author">
+          ${test.picture?.outerHTML || ''}
           <div class="author-info">
             <p class="author-name">${test.testimonialAuthor}</p>
             <p class="author-role">${test.testimonialDesignation}</p>
