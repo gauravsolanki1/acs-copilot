@@ -14,6 +14,7 @@ export default function decorate(block) {
     // Try to extract author and designation from various elements
     const headings = col2.querySelectorAll('h1, h2, h3, h4, h5, strong, b');
     const paragraphs = [...col2.querySelectorAll('p')];
+    // picture element for avatar
     const picture = row.querySelector('picture');
 
     // First try to get author from headings
