@@ -60,11 +60,11 @@
   gap: 10px;
 }
 
-.carousel-nav {
+button.carousel-nav {
   background: rgb(0 0 0 / 50%);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 8px 14px;
   cursor: pointer;
   z-index: 10;
 }
@@ -75,7 +75,7 @@
   gap: 5px;
 }
 
-.carousel-indicator {
+img.carousel-indicator {
   width: 35px;
   height: 35px;
   background: rgb(0 0 0 / 50%);
@@ -109,7 +109,7 @@
     position: absolute;
     bottom: 20%;
     float: right;
-    right: 0;
+    right: 5px;
   }
 
   .carousel-indicators {
