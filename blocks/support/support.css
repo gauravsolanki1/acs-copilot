@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: var(--acs-copilot-form-flex-direction);
     background: var(--form-background-color);
-    padding: 40px 20px;
 }
 
 .section.support-container.contact-us {
