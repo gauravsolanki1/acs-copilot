@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: var(--acs-copilot-form-flex-direction);
     background: var(--form-background-color);
+    height: calc(100vh - (215px));
 }
 
 .section.support-container.contact-us {
