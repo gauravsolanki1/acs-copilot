@@ -201,7 +201,7 @@
   --acs-copilot-arrow-background-repeat: no-repeat;
   --acs-copilot-button-padding-support:14px 0;
   --acs-copilot-dropdown-arrow-image: url("data:image/svg+xml;charset=UTF-8,<svg width='16' height='16' viewBox='0 0 16 16' fill='%2338B2AC' xmlns='http://www.w3.org/2000/svg'><path d='M4 6l4 4 4-4' stroke='%2338B2AC' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
-  --acs-copilot-text-shadow: 1px 1px 8px #38B2AC;
+  --acs-copilot-text-shadow: 1px 1px 8px #9A47E2;
   --acs-copilot-h1-text-shadow: 0 0 2px #38B2AC,    0 0 5px #38B2AC,      0 0 15px #38B2AC,     0 0 30px #38B2AC;  
 
   /* Cards Variables */

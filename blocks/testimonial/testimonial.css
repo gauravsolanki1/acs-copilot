@@ -50,6 +50,7 @@
   }
 
   &:hover {
+  transform: translateY(-5px);
     background:
       radial-gradient(ellipse at var(--acs-content-pos-purple), var(--acs-hero-glow-purple) 0%, transparent 55%),
       radial-gradient(ellipse at var(--acs-content-pos-pink), var(--acs-hero-glow-pink) 0%, transparent 50%),
@@ -58,11 +59,6 @@
       radial-gradient(ellipse at var(--acs-content-pos-orange), var(--acs-hero-glow-orange) 0%, transparent 45%);
   }
 
-}
-
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
 }
 
 .testimonial-content {

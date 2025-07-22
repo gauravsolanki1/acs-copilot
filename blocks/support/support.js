@@ -55,7 +55,6 @@ async function handleSubmit(form) {
       body: JSON.stringify({ data: generatePayload(form) }),
       headers: { 'Content-Type': 'application/json' },
     });
-    
     if (!response.ok) throw new Error(await response.text());
 
     if (form.dataset.confirmation) window.location.href = form.dataset.confirmation;
@@ -91,7 +90,10 @@ export default async function decorate(block) {
 
   // Create and append heading and paragraph elements
   form.prepend(Object.assign(document.createElement('p'), { textContent: block.querySelector('p').textContent }));
-  form.prepend(Object.assign(document.createElement('h1'), { textContent: block.querySelector(':scope > div > div').firstElementChild.textContent }));
+  const heading = document.createElement('div');
+  heading.className = 'heading-wrapper';
+  heading.prepend(Object.assign(document.createElement('h1'), { textContent: block.querySelector(':scope > div > div').firstElementChild.textContent }));
+  form.prepend(heading);
 
   block.replaceChildren(form);
 
