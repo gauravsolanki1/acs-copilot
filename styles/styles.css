@@ -188,10 +188,10 @@
   --acs-copilot-form-justify-content: flex-start;
   --acs-copilot-form-height: auto;
   --acs-copilot-form-flex-direction: column;
-  --acs-copilot-form-padding-bottom: 40px;
-  --acs-copilot-form-padding-top: 40px;
+  --acs-copilot-form-padding-bottom: 30px;
+  --acs-copilot-form-padding-top: 10px;
   --acs-copilot-form-margin-top: 0;
-  --acs-copilot-form-gap-1: 16px;
+  --acs-copilot-form-gap-1: 12px;
   --acs-copilot-form-input-filed-background:#18191a;
   --acs-copilot-form-button-background: #ff0048e7;
   --acs-copilot-form-contact-us-message-max-height: 150px;

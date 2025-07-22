@@ -1,5 +1,4 @@
 .section.support-container {
-    height: var(--full-height);
     justify-content: var(--form-justify-content);
     display: flex;
     flex-direction: var(--acs-copilot-form-flex-direction);
@@ -120,7 +119,7 @@
 
 .section.support-container #form-message {
     resize: vertical;
-    min-height: 150px;
+    min-height: 120px;
     max-height: 400px;
 }
 
